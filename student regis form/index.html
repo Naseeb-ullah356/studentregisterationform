@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2><span>Saylani</span> Mass IT Traning Program</h2><br/>
+        <h3>Student Registration Form</h3>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Course:</label>
+                <select class="form-control" id="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="Web Mobile Apps Development">Web Mobile Apps Development</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Flutter">Flutter</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                </select>
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <button id="showStudents" class="btn btn-success mt-3">Show All Students</button>
+        <div id="studentsList" class="mt-3"></div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
